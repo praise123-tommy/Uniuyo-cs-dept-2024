@@ -1,100 +1,108 @@
-
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About - Uniuyo CS Dept</title>
-
-  <!-- Bootstrap CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-
-  <!-- 🔥 Internal Glowing CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   <style>
     body {
-      background-color: #0d0d0d;
-      color: #e0e0e0;
+      background: #e6f0ff;
       font-family: 'Segoe UI', sans-serif;
+      color: #002b5c;
     }
-
-    h1, h2 {
+    .glow {
+      text-shadow: 0 0 10px #00aaff, 0 0 20px #00aaff;
+    }
+    .section-title {
+      font-size: 2rem;
       font-weight: bold;
-      text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+      color: #0056b3;
+      margin-bottom: 1rem;
     }
-
-    .glow-box {
-      border: 1px solid #00ffff55;
-      padding: 20px;
+    .icon-box i {
+      font-size: 2rem;
+      color: #00aaff;
+      margin-bottom: 0.5rem;
+    }
+    .vision-mission {
+      background: #fff;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .why-box {
+      background: #d0e9ff;
+      padding: 1.5rem;
       border-radius: 10px;
-      box-shadow: 0 0 15px #00ffff44;
-      background-color: #111111;
-      margin-bottom: 30px;
-    }
-
-    .nav-link {
-      color: #ccc !important;
-    }
-
-    .nav-link:hover {
-      color: #00ffff !important;
-      text-shadow: 0 0 5px #00ffff;
-    }
-
-    footer {
-      background-color: #111;
-      border-top: 1px solid #00ffff33;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
   </style>
 </head>
-
 <body>
+  <div class="container py-5">
+    <h1 class="text-center glow mb-4">About the Computer Science Department</h1><div class="text-center mb-5">
+  <p class="lead">
+    The Department of Computer Science, University of Uyo, is a vibrant and forward-thinking space committed to excellence in computing education, research, and innovation.
+  </p>
+</div>
 
-  <!-- 🔷 Header -->
-  <header class="py-3 mb-4 border-bottom border-info">
-    <div class="container d-flex flex-wrap justify-content-between align-items-center">
-      <h1 class="text-info">🔥 Uniuyo CS Dept</h1>
-      <nav>
-        <ul class="nav">
-          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Staff</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Students</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Projects</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-        </ul>
-      </nav>
+<div class="row g-4 mb-5">
+  <div class="col-md-6">
+    <div class="vision-mission">
+      <h3 class="section-title">Our Vision</h3>
+      <p>To produce world-class computer scientists who will transform Africa through technology.</p>
     </div>
-  </header>
-
-  <!-- 🔷 Main Content -->
-  <main class="container">
-
-    <div class="glow-box">
-      <h2>🧠 Who We Are</h2>
-      <p>We are the Uniuyo Computer Science Department, training future tech leaders in Nigeria and beyond. We believe in code, creativity, and community.</p>
+  </div>
+  <div class="col-md-6">
+    <div class="vision-mission">
+      <h3 class="section-title">Our Mission</h3>
+      <p>To deliver quality teaching, research, and community service in computing and ICT fields.</p>
     </div>
+  </div>
+</div>
 
-    <div class="glow-box">
-      <h2>🎯 Our Mission</h2>
-      <p>To empower students with practical tech skills, sharp thinking, and a bold spirit to solve real-world problems using software, AI, and innovation.</p>
-    </div>
+<div class="text-center mb-4">
+  <h3 class="section-title">What We Offer</h3>
+</div>
 
-    <div class="glow-box">
-      <h2>🌟 Our Vision</h2>
-      <p>To become one of the best tech faculties in Africa, producing developers, engineers, and entrepreneurs that inspire the world.</p>
-    </div>
+<div class="row text-center mb-5">
+  <div class="col-md-4 icon-box">
+    <i class="fas fa-graduation-cap"></i>
+    <p>B.Sc in Computer Science</p>
+  </div>
+  <div class="col-md-4 icon-box">
+    <i class="fas fa-brain"></i>
+    <p>Machine Learning Track</p>
+  </div>
+  <div class="col-md-4 icon-box">
+    <i class="fas fa-code"></i>
+    <p>Web & Mobile Development</p>
+  </div>
+  <div class="col-md-4 icon-box">
+    <i class="fas fa-cogs"></i>
+    <p>Software Engineering</p>
+  </div>
+  <div class="col-md-4 icon-box">
+    <i class="fas fa-database"></i>
+    <p>Data Science & Analytics</p>
+  </div>
+  <div class="col-md-4 icon-box">
+    <i class="fas fa-microchip"></i>
+    <p>Embedded Systems</p>
+  </div>
+</div>
 
-    <div class="glow-box">
-      <h2>👨‍🏫 Meet Our HOD</h2>
-      <p><strong>Dr. Emmanuel Smartbrain</strong> leads the department with passion, precision, and purpose. He believes every student can become a legend.</p>
-    </div>
+<div class="why-box">
+  <h4 class="mb-3">Why Choose Us?</h4>
+  <ul>
+    <li>✅ Accredited by NUC</li>
+    <li>✅ Modern facilities & labs</li>
+    <li>✅ Passionate and experienced lecturers</li>
+    <li>✅ Vibrant student developer community</li>
+    <li>✅ Opportunities for innovation and research</li>
+  </ul>
+</div>
 
-  </main>
-
-  <!-- 🔷 Footer -->
-  <footer class="text-center text-muted py-3 mt-5">
-    &copy; 2024 Uniuyo Computer Science Dept. All rights reserved.
-  </footer>
-
-</body>
+  </div>  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script></body>
 </html>
