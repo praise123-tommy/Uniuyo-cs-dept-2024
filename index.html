@@ -3,34 +3,104 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Uniuyo CS Dept 2024</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <title>Uniuyo CS Dept</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Glowing Internal Styles -->
+  <style>
+    body {
+      background-color: #0b0b0b;
+      color: #f0f0f0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    h1, h2, h3 {
+      text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+    }
+
+    .glow-box {
+      border: 1px solid #00ffff33;
+      padding: 30px;
+      border-radius: 10px;
+      background-color: #111;
+      box-shadow: 0 0 15px #00ffff55;
+      margin-bottom: 30px;
+    }
+
+    .nav-link {
+      color: #ccc !important;
+    }
+
+    .nav-link:hover {
+      color: #00ffff !important;
+      text-shadow: 0 0 5px #00ffff;
+    }
+
+    .hero {
+      padding: 80px 20px;
+      text-align: center;
+      background: linear-gradient(145deg, #0f0f0f, #1a1a1a);
+      box-shadow: 0 0 20px #00ffff55;
+      border-radius: 15px;
+      margin-top: 30px;
+    }
+
+    footer {
+      background-color: #111;
+      border-top: 1px solid #00ffff33;
+    }
+  </style>
 </head>
+
 <body>
-  <header>
-    <h1>🔥 Uniuyo Computer Science Dept - 2024 Series</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Staff</a></li>
-        <li><a href="#">Students</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Downloads</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
+
+  <!-- 🔷 Header / Navbar -->
+  <header class="py-3 border-bottom border-info">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center">
+      <h1 class="text-info">🌐 Uniuyo CS Dept</h1>
+      <nav>
+        <ul class="nav">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Staff</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Students</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <h2>Welcome to the Future of Computing</h2>
-      <p>The official hub for all things Computer Science, Uniuyo 2024 🎓💻</p>
-    </section>
+  <!-- 🔷 Hero Section -->
+  <section class="container hero text-white">
+    <h2>🎓 Welcome to the Computer Science Department</h2>
+    <p class="lead mt-3">University of Uyo — where innovation meets excellence.</p>
+    <p>We train future tech leaders in coding, AI, data science, and problem solving. Step into your purpose and power up your future! ⚡</p>
+  </section>
+
+  <!-- 🔷 Info Boxes -->
+  <main class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="glow-box">
+          <h3>💻 Modern Labs</h3>
+          <p>Our computer labs are equipped with the latest tools and software to support hands-on learning and real-world projects.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="glow-box">
+          <h3>📚 Dedicated Lecturers</h3>
+          <p>Our faculty includes seasoned professors, researchers, and developers dedicated to mentoring the next generation of innovators.</p>
+        </div>
+      </div>
+    </div>
   </main>
 
-  <footer>
-    <p>&copy; 2024 Uniuyo Computer Science Dept. All rights reserved.</p>
+  <!-- 🔷 Footer -->
+  <footer class="text-center text-muted py-4 mt-5">
+    &copy; 2024 Uniuyo Computer Science Dept. Built with 💙 by Tommy.
   </footer>
+
 </body>
 </html>
