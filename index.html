@@ -1,149 +1,121 @@
-<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Uniuyo CS Dept - About</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Uniuyo CS Dept 2024</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   <style>
     body {
-      background-color: #0e1a2b;
-      color: #e6f1ff;
+      background-color: #0b1522;
+      color: #cce7ff;
       font-family: 'Segoe UI', sans-serif;
-    }.navbar {
-  background-color: #102840;
-  box-shadow: 0 0 15px #64b5f6;
-}
+    }
 
-.navbar-brand, .nav-link {
-  color: #e6f1ff !important;
-}
+    .navbar {
+      background-color: #09192e;
+      box-shadow: 0 0 15px #00bfff;
+    }
 
-.hero {
-  padding: 80px 20px;
-  background: linear-gradient(to right, #0e1a2b, #152c46);
-  text-align: center;
-  border-bottom: 2px solid #64b5f6;
-}
+    .navbar a {
+      color: #cce7ff;
+    }
 
-.hero h1 {
-  color: #64b5f6;
-  font-size: 3rem;
-}
+    .navbar a:hover {
+      color: #00bfff;
+    }
 
-.card {
-  background-color: #152c46;
-  border: none;
-  box-shadow: 0 0 10px #64b5f6;
-}
+    .carousel-item {
+      height: 90vh;
+      background: linear-gradient(to right, #002240, #0b1522);
+      color: #fff;
+      text-align: center;
+      padding: 60px 20px;
+    }
 
-.card-title {
-  color: #64b5f6;
-}
+    .carousel-item h2 {
+      font-size: 3rem;
+      color: #00bfff;
+    }
 
-.section-title {
-  color: #64b5f6;
-  margin-bottom: 30px;
-}
+    .carousel-item p {
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: auto;
+    }
 
-footer {
-  background-color: #102840;
-  padding: 20px;
-  text-align: center;
-  color: #88aacc;
-  margin-top: 50px;
-}
+    .glow {
+      text-shadow: 0 0 10px #00bfff, 0 0 20px #00bfff;
+    }
 
+    footer {
+      background: #09192e;
+      color: #88ccff;
+      padding: 20px;
+      text-align: center;
+    }
   </style>
-</head><body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">Uniuyo CS Dept</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Courses</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg px-4">
+  <a class="navbar-brand glow fw-bold" href="#">🧠 Uniuyo CS</a>
+  <button class="navbar-toggler bg-light" data-bs-toggle="collapse" data-bs-target="#navLinks">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navLinks">
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+      <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+      <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Carousel -->
+<div id="csCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <h2 class="glow">Welcome to Uniuyo CS Dept</h2>
+      <p>Empowering the next generation of innovators and problem solvers in Nigeria.</p>
     </div>
-  </nav>  <!-- Hero -->  <section class="hero">
-    <div class="container">
-      <h1>About the Department</h1>
-      <p class="lead">We are shaping the future of technology and innovation</p>
+    <div class="carousel-item">
+      <h2 class="glow">What is Computer Science?</h2>
+      <p>Computer Science is the study of computers, algorithms, programming, and how technology solves real-world problems.</p>
     </div>
-  </section>  <!-- Vision & Mission -->  <section class="container my-5">
-    <div class="row text-center">
-      <div class="col-md-6">
-        <div class="card p-4">
-          <h4 class="card-title">🎯 Our Vision</h4>
-          <p>To produce world-class computer scientists who will transform Africa through technology.</p>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="card p-4">
-          <h4 class="card-title">🚀 Our Mission</h4>
-          <p>To deliver quality teaching, research, and community service in computing and ICT fields.</p>
-        </div>
-      </div>
+    <div class="carousel-item">
+      <h2 class="glow">Why Study CS at Uniuyo?</h2>
+      <p>We provide hands-on training, dedicated lecturers, and an environment that fosters creativity and growth.</p>
     </div>
-  </section>  <!-- What We Offer -->  <section class="container my-5">
-    <h2 class="text-center section-title">💼 What We Offer</h2>
-    <div class="row g-4 text-center">
-      <div class="col-md-4">
-        <div class="card p-3">
-          <h5 class="card-title">🎓 B.Sc in Computer Science</h5>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card p-3">
-          <h5 class="card-title">🧠 Machine Learning Track</h5>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card p-3">
-          <h5 class="card-title">🕸️ Web & Mobile Dev</h5>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card p-3">
-          <h5 class="card-title">🛠️ Software Engineering</h5>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card p-3">
-          <h5 class="card-title">💾 Data Science</h5>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card p-3">
-          <h5 class="card-title">⚙️ Embedded Systems</h5>
-        </div>
-      </div>
+    <div class="carousel-item">
+      <h2 class="glow">Careers in Computer Science</h2>
+      <p>CS graduates can become software engineers, AI researchers, cybersecurity experts, game developers, and more.</p>
     </div>
-  </section>  <!-- Why Choose Us -->  <section class="container my-5">
-    <h2 class="text-center section-title">🩵 Why Choose Us?</h2>
-    <div class="card p-4">
-      <ul>
-        <li>✅ Accredited by NUC</li>
-        <li>✅ Modern facilities & equipment</li>
-        <li>✅ Passionate and experienced lecturers</li>
-        <li>✅ Vibrant and inclusive student community</li>
-        <li>✅ Strong industry links and internships</li>
-      </ul>
+    <div class="carousel-item">
+      <h2 class="glow">Learn Real Skills</h2>
+      <p>We teach programming, system design, networking, databases, and problem-solving from 100 level to final year.</p>
     </div>
-  </section>  <footer>
-    <p>© 2024 Uniuyo Computer Science Department</p>
-  </footer>  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script></body></html>
+    <div class="carousel-item">
+      <h2 class="glow">Your Future Begins Here</h2>
+      <p>Start your journey with Uniuyo CS Department today and change the world with technology. 💻</p>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#csCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#csCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<!-- Footer -->
+<footer>
+  &copy; 2024 Uniuyo CS Dept. Built by Tommy 💙 with Ace.
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
